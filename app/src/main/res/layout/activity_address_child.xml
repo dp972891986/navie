@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AddressChildActivity">
+
+    <LinearLayout
+        android:id="@+id/add_child_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0EFF5"
+        android:paddingBottom="15dp"
+        android:paddingTop="15dp">
+
+        <EditText
+            android:id="@+id/add_child_edit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@null"
+            android:layout_weight="1"
+            android:hint="常用地址是" />
+
+        <TextView
+            android:id="@+id/add_child_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:text="取消"
+            android:textColor="#7BC5DF"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/add_address_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/add_child_layout" />
+
+</RelativeLayout>
